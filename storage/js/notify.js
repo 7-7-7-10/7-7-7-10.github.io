@@ -41,7 +41,7 @@ function createNotification(message) {
     notification.appendChild(header);
 
     const messageSpan = document.createElement('div');
-    messageSpan.innerHTML = `US4 is discontinued. We recommend you export your data to US5 once released. 
+    messageSpan.innerHTML = 'Check out the apps page.' 
     For more information go to <a href="${window.origin}/us5.html" target="_blank" style="color:#4da6ff; text-decoration:underline;">this page</a>.`;
     messageSpan.style.marginBottom = '20px';
     notification.appendChild(messageSpan);
@@ -73,5 +73,5 @@ function createNotification(message) {
 }
 
 window.onload = () => {
-    createNotification('US4 is discontinued. We recommend you export your data to US5 once released.');
+    createNotification('Check out the apps page.');
 };
