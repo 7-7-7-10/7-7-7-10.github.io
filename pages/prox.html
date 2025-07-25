@@ -423,7 +423,7 @@
           mapped();
         } else {
           const isInternal = mapped === '/static/index.html' || mapped === '/pages/prox/settings';
-          iframe.src = isInternal ? mapped : `/static/embed?p=${mapped.startsWith('http') ? mapped : `https://search.brave.com/?q=${encodeURIComponent(mapped)}`}`;
+          iframe.src = isInternal ? mapped : `/static/embed?p=${mapped.startsWith('http') ? mapped : `https://duckduckgo.com/?q=${encodeURIComponent(mapped)}`}`;
           iframe.onload = () => {
             updateSearchBar(iframe);
             updateTabName(iframe);
