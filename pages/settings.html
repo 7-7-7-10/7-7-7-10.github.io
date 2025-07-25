@@ -66,6 +66,23 @@
       <button id="resetSettings" class="reset-button">Reset Tab Name and Icon</button>
       <button id="resetPanicButtonSettings" class="reset-button">Reset Panic Button Settings</button>
     </div>
+    <div class="setting-item">
+  <label for="search-engine-select" class="setting-label">Search Engine</label>
+  <select id="search-engine-select" class="setting-select">
+    <option value="brave">Brave</option>
+    <option value="duckduckgo">DuckDuckGo</option>
+    <option value="google">Google</option>
+    <option value="bing">Bing</option>
+    <option value="custom">Custom</option>
+  </select>
+</div>
+
+<div class="setting-item" id="custom-search-engine-url-container" style="display:none;">
+  <label for="custom-search-engine-url" class="setting-label">Custom Search Engine URL</label>
+  <input type="text" id="custom-search-engine-url" class="setting-input" placeholder="Enter search URL with {searchTerms}"/>
+  <small>Use <code>{searchTerms}</code> as placeholder for query</small>
+</div>
+
     <script>
       const beforeUnloadToggle = document.getElementById('beforeUnloadToggle');
       const autocloakToggle = document.getElementById('autocloakToggle');
@@ -186,6 +203,44 @@
         localStorage.setItem('backgroundColor', colorPicker.value);
       });
     </script>
+    <script>
+    const select = document.getElementById('search-engine-select');
+const customUrlContainer = document.getElementById('custom-search-engine-url-container');
+const customUrlInput = document.getElementById('custom-search-engine-url');
+
+select.addEventListener('change', () => {
+  if (select.value === 'custom') {
+    customUrlContainer.style.display = 'block';
+  } else {
+    customUrlContainer.style.display = 'none';
+  }
+});
+
+// On load, you can set the saved value and toggle accordingly
+function loadSearchEngineSetting() {
+  const savedEngine = localStorage.getItem('searchEngine') || 'google';
+  select.value = savedEngine;
+  if (savedEngine === 'custom') {
+    customUrlContainer.style.display = 'block';
+    customUrlInput.value = localStorage.getItem('customSearchUrl') || '';
+  } else {
+    customUrlContainer.style.display = 'none';
+  }
+}
+
+// Save settings on form submit or change
+function saveSearchEngineSetting() {
+  const engine = select.value;
+  localStorage.setItem('searchEngine', engine);
+  if (engine === 'custom') {
+    localStorage.setItem('customSearchUrl', customUrlInput.value.trim());
+  }
+}
+    
+
+// Call load on page init
+loadSearchEngineSetting();
+
     <script type="text/javascript" src="/storage/js/notify.js"></script>
     <script type="text/javascript" src="/storage/js/background.js"></script>
     <script type="text/javascript" src="/storage/js/cheese-algorithm.js"></script>
