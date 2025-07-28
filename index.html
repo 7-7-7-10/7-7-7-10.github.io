@@ -4,9 +4,9 @@
     <script src="/static/uv/uv.bundle.js" defer></script>
     <script src="/static/uv/uv.config.js" defer></script>
     <script src="/static/register-sw.js" defer></script>
-    <meta property="og:title" content="Nexus | Home">
-    <meta property="og:description" content="Search the web freely, watch your favorite movies and shows, and play your favorite gаmes with nexus.">
-    <meta name="keywords" content="nexus">
+    <meta property="og:title" content="Phoenix | Home">
+    <meta property="og:description" content="Search the web freely, chat with your friends, and play your favorite gаmes with Phoenix.">
+    <meta name="keywords" content="Phoenix">
     <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -262,7 +262,7 @@
         </button>
       </div>
       <div class="search-bar-container">
-        <input type="text" id="search-input" value="nexus://new-tab" class="search-bar" autocomplete="off" placeholder="Search or enter a URL">
+        <input type="text" id="search-input" value="Phoenix://new-tab" class="search-bar" autocomplete="off" placeholder="Search or enter a URL">
       </div>
       <div class="navbar-right">
         <button onclick="openInAboutBlank()" class="nav-btn">
@@ -354,26 +354,26 @@ function closeTab(event) {
 
 function internal(url) {
   try {
-    if (url.startsWith('nexus://games-frame')) {
-      const path = url.replace('nexus://', '/pages/');
+    if (url.startsWith('Phoenix://games-frame')) {
+      const path = url.replace('Phoenix://', '/pages/');
       return () => setIframe(path, 'Games');
     }
-    if (url.startsWith('nexus://apps-frame')) {
-      const path = url.replace('nexus://', '/pages/');
+    if (url.startsWith('Phoenix://apps-frame')) {
+      const path = url.replace('Phoenix://', '/pages/');
       return () => setIframe(path, 'Apps');
     }
     switch (url) {
-      case 'nexus://new-tab': return () => setIframe('/static/?upd=', 'New Tab');
-      case 'nexus://settings': return () => setIframe('/pages/prox/settings?upd=', 'Settings');
-      case 'nexus://games': return () => setIframe('/pages/games?upd=', 'Games');
-      case 'nexus://media': return () => setIframe('/pages/heartive?upd=', 'Media');
-      case 'nexus://apps': return () => setIframe('/pages/apps?upd=', 'Apps');
-      case 'nexus://partners': return () => setIframe('/pages/partners?upd=', 'Partners');
-      case 'nexus://roms': return () => setIframe('/pages/roms?upd=', 'roms');
-      case 'nexus://extra': return () => setIframe('/pages/extra?upd=', 'Extra');
-      case 'nexus://data': return () => setIframe('/pages/data?upd=', 'Data');
-      case 'nexus://data-usage': return () => setIframe('/pages/extra/data-use', 'Data Usage');
-      case 'nexus://secret': return () => setIframe('/pages/secret', 'super-secret');
+      case 'Phoenix://new-tab': return () => setIframe('/static/?upd=', 'New Tab');
+      case 'Phoenix://settings': return () => setIframe('/pages/prox/settings?upd=', 'Settings');
+      case 'Phoenix://games': return () => setIframe('/pages/games?upd=', 'Games');
+      case 'Phoenix://media': return () => setIframe('/pages/heartive?upd=', 'Media');
+      case 'Phoenix://apps': return () => setIframe('/pages/apps?upd=', 'Apps');
+      case 'Phoenix://partners': return () => setIframe('/pages/partners?upd=', 'Partners');
+      case 'Phoenix://roms': return () => setIframe('/pages/roms?upd=', 'roms');
+      case 'Phoenix://extra': return () => setIframe('/pages/extra?upd=', 'Extra');
+      case 'Phoenix://data': return () => setIframe('/pages/data?upd=', 'Data');
+      case 'Phoenix://data-usage': return () => setIframe('/pages/extra/data-use', 'Data Usage');
+      case 'Phoenix://secret': return () => setIframe('/pages/secret', 'super-secret');
       case 'home': return '/static/';
       case 'settings': return '/pages/prox/settings';
     }
@@ -484,34 +484,34 @@ function search() {
           }
           if (docHref.includes("/pages/games-frame") || docHref.includes("/pages/apps-frame")) {
             const remaining = docHref.replace(`https://${hostname}/pages/`, "");
-            return `nexus://${remaining}`;
+            return `Phoenix://${remaining}`;
           }
           switch (docHref) {
             case `https://${hostname}/static/`:
-              return "nexus://new-tab";
+              return "Phoenix://new-tab";
             case `https://${hostname}/pages/prox/settings`:
-              return "nexus://settings";
+              return "Phoenix://settings";
             case `https://${hostname}/pages/games?upd=`:
-              return "nexus://games";
+              return "Phoenix://games";
             case `https://${hostname}/pages/heartive?upd=`:
-              return "nexus://media";
+              return "Phoenix://media";
             case `https://${hostname}/pages/apps?upd=`:
-              return "nexus://apps";
+              return "Phoenix://apps";
             case `https://${hostname}/pages/partners?upd=`:
-              return "nexus://partners";
+              return "Phoenix://partners";
             case `https://${hostname}/pages/roms?upd=`:
-              return "nexus://roms";
+              return "Phoenix://roms";
             case `https://${hostname}/pages/extra?upd=`:
-              return "nexus://extra";
+              return "Phoenix://extra";
             case `https://${hostname}/pages/data?upd=`:
-              return "nexus://data";
+              return "Phoenix://data";
             case `https://${hostname}/pages/extra/data-use`:
-              return "nexus://data-usage";
+              return "Phoenix://data-usage";
             case `https://${hostname}/pages/secret`:
             case `https://${hostname}/pages/secret/`:
-              return "nexus://secret";
+              return "Phoenix://secret";
             case `https://${hostname}/storage/images/cheese.png`:
-              return "nexus://cheese.png";
+              return "Phoenix://cheese.png";
             default:
               if (docHref.startsWith(hostPrefix)) {
                 return decodeURI(docHref.replace(hostPrefix, ""));
@@ -552,7 +552,7 @@ function search() {
               try {
                 host = new URL(__uv$config.decodeUrl(path));
               } catch {
-                host = new URL("https://nexus-sub.netlify.app");
+                host = new URL("https://Phoenix-sub.netlify.app");
               }
               const faviconUrl = `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://${host.hostname}&size=24`;
               let title = '';
