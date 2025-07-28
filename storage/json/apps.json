@@ -12,20 +12,20 @@
     "title": "Thirty Dollar Website"
   },
     {
-    "url": "/pages/apps-frame?url=/https://7-7-7-8.github.io/Calculator/",
+    "url": "/static/embed?p=https://https://7-7-7-8.github.io/Calculator/",
     "img": "/storage/images/calculator.png",
     "alt": "Calculator",
     "title": "Calculator"
   },
     {
-    "url": "/pages/apps-frame?url=/https://7-7-7-8.github.io/QR",
+    "url": "/static/embed?p=https://https://7-7-7-8.github.io/QR",
     "img": "/storage/images/QR.png",
     "alt": "QR code generator",
     "title": "QR code generator"
   },
   {
-    "url": "/pages/apps-frame?url=/https://7-7-7-8.github.io/URL-Generator",
-    "img": "/storage/images/URL-A.png",
+    "url": "/static/embed?p=https://https://7-7-7-8.github.io/URL-Generator",
+    "img": "/storage/images/AB.png",
     "alt": "A:B gnerator",
     "title": "A:B Generator"
   },
