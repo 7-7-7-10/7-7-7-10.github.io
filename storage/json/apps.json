@@ -12,19 +12,31 @@
     "title": "Thirty Dollar Website"
   },
     {
-    "url": "/static/embed?p=https://https://7-7-7-8.github.io/Calculator/",
+    "url": "/static/embed?p=https://7-7-7-8.github.io/Calculator/",
     "img": "/storage/images/calculator.png",
     "alt": "Calculator",
     "title": "Calculator"
   },
     {
-    "url": "/static/embed?p=https://https://7-7-7-8.github.io/QR",
+    "url": "/static/embed?p=https://terbiumon.top/",
+    "img": "/storage/images/OS.png",
+    "alt": "Terbium OS",
+    "title": "Terbium OS"
+  },
+   {
+    "url": "/static/embed?p=https://anura.pro/",
+    "img": "/storage/images/aOS.png",
+    "alt": "Anura OS",
+    "title": "Anura OS"
+  },
+    {
+    "url": "/static/embed?p=https://7-7-7-8.github.io/QR",
     "img": "/storage/images/QR.png",
     "alt": "QR code generator",
     "title": "QR code generator"
   },
   {
-    "url": "/static/embed?p=https://https://7-7-7-8.github.io/URL-Generator",
+    "url": "/static/embed?p=https://7-7-7-8.github.io/URL-Generator",
     "img": "/storage/images/AB.png",
     "alt": "A:B gnerator",
     "title": "A:B Generator"
