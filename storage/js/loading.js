@@ -6,29 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
   document.head.appendChild(fontLink);
 
   const loadingMessages = [
-    'made with love from the nexus team <3 (just me)',
-    'are the 19:36?',
-    'boiiii what u say about ajh phonk',
-    'are you sure?',
-    'this is like technically release games v7 if you think about it',
-    'æ³£ããŸããªã£ã¦ã‚‚ ãã‚Œã§ã‚‚ ã‹ãé›†ã‚',
-    'pixel jeff the goat',
-    'pablocp kinda tuff',
-    '"sealiee1 would want my milkshakes" - frogiee1',
-    'also try jobi.one',
-    'today is 30/30',
-    '"watch hfjone, it changed my life" - prolly someone',
-    'young pokeballer i just leveled up',
-    '+1 (475) 266-9223',
-    'windows update fucked up my ssd ðŸ˜­',
-    'Life only begins once you realize what you want to be.',
-    'Some dance to remember, others dance to forget.',
-    'hache tml',
-    '"how to setup aws cloudflare"',
-    'bog has a good site',
-    'rest in pork lil bro',
-    'when bro asks for one hawk tuah',
-    'gurt: yo',
+
+    'Made by 7-7-7-8',
+     'Where Every Ending Is a New Beginning.',
+    'Fueling Your Next Level—Phoenix.',
+    'Rise from the Ashes. Game Without Limits.',
   ];
 
   const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
