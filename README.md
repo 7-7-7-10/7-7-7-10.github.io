@@ -55,7 +55,7 @@ Contributions or suggestions are welcome! To contribute:
 
 ## License
 
-This project currently has no license. Please contact the repository owner for permissions.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
