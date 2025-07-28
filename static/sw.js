@@ -1,3 +1,4 @@
+
 var cacheName = 'TIWcog';
 var filesToCache = [
   '/js/sw.js'
