@@ -128,31 +128,31 @@
   },
    {
     "url": "/static/embed?p=https://bing.com/",
-    "img": "storage/images/bing.png",
+    "img": "/storage/images/bing.png",
     "alt": "Bing",
     "title": "Bing"
   },
    {
     "url": "/static/embed?p=https://chess.com/",
-    "img": "storage/images/chess.png",
+    "img": "/storage/images/chess.png",
     "alt": "Chess.com",
     "title": "Chess.com"
   },
    {
     "url": "/static/embed?p=https://copilot.microsoft.com/",
-    "img": "storage/images/copilot.png",
+    "img": "/storage/images/copilot.png",
     "alt": "Copliot AI",
     "title": "Copilot"
   },
     {
     "url": "/static/embed?p=https://kazwire.com/",
-    "img": "storage/images/kazwire.png",
+    "img": "/storage/images/kazwire.png",
     "alt": "Kazwire",
     "title": "Kazwire"
   },
     {
     "url": "/static/embed?p=https://browser.rammerhead.org//",
-    "img": "storage/images/rammerhead.png",
+    "img": "/storage/images/rammerhead.png",
     "alt": "Rammerhead",
     "title": "Rammerhead"
   },
