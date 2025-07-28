@@ -47,18 +47,7 @@
     "alt": "Sleepy Cat",
     "title": "Sleepy Cat"
   },
-  {
-    "url": "/pages/apps-frame?url=/pages/apps/v86/",
-    "img": "/pages/apps/images/v86.png",
-    "alt": "copy.sh - v86",
-    "title": "copy.sh - v86"
-  },
-  {
-    "url": "/pages/apps-frame?url=/pages/apps/txtmoji/",
-    "img": "/pages/apps/images/txtmoji.avif",
-    "alt": "Txtmoji",
-    "title": "Txtmoji"
-  },
+
   {
     "url": "/static/embed?p=https://play.geforcenow.com/mall/#/loginwall",
     "img": "/pages/apps/images/geforce.png",
@@ -131,11 +120,47 @@
     "alt": "DuckDuckGo",
     "title": "DuckDuckGo"
   },
+   {
+    "url": "/static/embed?p=https://search.brave.com/",
+    "img": "/storage/images/brave.png",
+    "alt": "Brave",
+    "title": "Brave"
+  },
+   {
+    "url": "/static/embed?p=https://bing.com/",
+    "img": "storage/images/bing.png",
+    "alt": "Bing",
+    "title": "Bing"
+  },
+   {
+    "url": "/static/embed?p=https://chess.com/",
+    "img": "storage/images/chess.png",
+    "alt": "Chess.com",
+    "title": "Chess.com"
+  },
+   {
+    "url": "/static/embed?p=https://copilot.microsoft.com/",
+    "img": "storage/images/copilot.png",
+    "alt": "Copliot AI",
+    "title": "Copilot"
+  },
+    {
+    "url": "/static/embed?p=https://kazwire.com/",
+    "img": "storage/images/kazwire.png",
+    "alt": "Kazwire",
+    "title": "Kazwire"
+  },
+    {
+    "url": "/static/embed?p=https://browser.rammerhead.org//",
+    "img": "storage/images/rammerhead.png",
+    "alt": "Rammerhead",
+    "title": "Rammerhead"
+  },
   {
-    "url": "/static/embed?p=https://tiktok.com",
-    "img": "/pages/apps/images/tt.png",
-    "alt": "TikTok",
-    "title": "TikTok"
+    "url": "/static/embed?p=https://thelearningcentral.global.ssl.fastly.net/",
+    "img": "/pages/apps/images/SZVY.jpg",
+    "alt": "SZVY Central",
+    "title": "SZVY Central"
   },
   {
     "url": "/static/embed?p=https://duck.ai",
