@@ -4,3 +4,4 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = `/static/load/${__uv$config.encodeUrl(link)}`;
   }
 });
+
