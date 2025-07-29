@@ -13,21 +13,21 @@ A static site fork of Voucan US4 — an advanced proxy/game service platform wit
 
 ## About
 
-This project is a static site fork of Voucan US4, built to provide a streamlined front-end experience for an advanced proxy and gaming service. It focuses on user-friendly design, fast loading times, and clarity in showcasing the powerful Phoenix proxy technology.
+This project is a static site fork of Voucan US4, built to provide a streamlined front-end experience for an advanced proxy and gaming service. It focuses on user-friendly design, fast loading times, and clarity in showcasing the powerful Phoenix proxy technology. - Not true beacus eyou forked my repo 
 
 ## Features
 
 - Clean, modern static page  
-- Highlights advanced proxy features such as bypassing blocks, ultra-low latency, and developer-friendly tools  
+- Highlights advanced proxy features such as bypassing blocks, ultra-low latency, and developer-friendly tools - Not true since its not fast
 - Responsive and easy to customize  
 - Showcases Phoenix proxy branding and slogans  
-- No server or backend dependencies  
+- No server or backend dependencies - Not true since the bare is a backend
 
 ## Usage
 
 To use or preview this static site locally:
 
-1. Fork the repository (ex. username/username.github.io THIS IS THE ONLY WAY IT WILL WORK)
+1. Fork the repository (ex. username/username.github.io THIS IS THE ONLY WAY IT WILL WORK - Not true since you can host it on netlify & VPS)
 
   2. Open the `index.html` file in your browser directly, or serve it with any static file server (optional):
 3. Visit `http://localhost:8000` in your browser to see the site.
@@ -59,8 +59,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-Created by [7-7-7-10] — [7-7-7-10.github.io]  
-Project URL: https://7-7-7-10.github.io
+Created by [breezly101] — [breezly101.github.io]  
+Project URL: https://breezly101.github.io
 
 
  
